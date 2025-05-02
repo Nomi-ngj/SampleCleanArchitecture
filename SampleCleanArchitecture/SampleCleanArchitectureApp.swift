@@ -2,7 +2,7 @@
 //  SampleCleanArchitectureApp.swift
 //  SampleCleanArchitecture
 //
-//  Created by Rohit Kumar on 02/05/2025.
+//  Created by Nouman Gul Junejo on 02/05/2025.
 //
 
 import SwiftUI
@@ -11,7 +11,16 @@ import SwiftUI
 struct SampleCleanArchitectureApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            let repo = UserRemoteDataSource()
+            let useCase = GetUsersUseCase(repository: repo)
+            let viewModel = UserListViewModel(getUsersUseCase: useCase)
+            
+            //SWIFTUI
+            UserListView(viewModel: viewModel)
+            
+            //UIKIT
+//          let userListVC = UserListViewController(viewModel: viewModel)
         }
     }
 }

@@ -6,14 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		AA376E392DC4A78000592321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA376E182DC4A72200592321 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA376E1F2DC4A72200592321;
+			remoteInfo = SampleCleanArchitecture;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AA376E202DC4A72200592321 /* SampleCleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCleanArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA376E352DC4A78000592321 /* SampleCleanArchitectureTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCleanArchitectureTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AA376E222DC4A72200592321 /* SampleCleanArchitecture */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SampleCleanArchitecture;
+			sourceTree = "<group>";
+		};
+		AA376E362DC4A78000592321 /* SampleCleanArchitectureTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SampleCleanArchitectureTest;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,14 +42,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA376E322DC4A78000592321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AA376E172DC4A72200592321 = {
 			isa = PBXGroup;
 			children = (
-				AA376E222DC4A72200592321 /* SampleCleanArchitecture */,
 				AA376E212DC4A72200592321 /* Products */,
+				AA376E222DC4A72200592321 /* SampleCleanArchitecture */,
+				AA376E362DC4A78000592321 /* SampleCleanArchitectureTest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				AA376E202DC4A72200592321 /* SampleCleanArchitecture.app */,
+				AA376E352DC4A78000592321 /* SampleCleanArchitectureTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = AA376E202DC4A72200592321 /* SampleCleanArchitecture.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AA376E342DC4A78000592321 /* SampleCleanArchitectureTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA376E3B2DC4A78000592321 /* Build configuration list for PBXNativeTarget "SampleCleanArchitectureTest" */;
+			buildPhases = (
+				AA376E312DC4A78000592321 /* Sources */,
+				AA376E322DC4A78000592321 /* Frameworks */,
+				AA376E332DC4A78000592321 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA376E3A2DC4A78000592321 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA376E362DC4A78000592321 /* SampleCleanArchitectureTest */,
+			);
+			name = SampleCleanArchitectureTest;
+			packageProductDependencies = (
+			);
+			productName = SampleCleanArchitectureTest;
+			productReference = AA376E352DC4A78000592321 /* SampleCleanArchitectureTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					AA376E1F2DC4A72200592321 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					AA376E342DC4A78000592321 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = AA376E1F2DC4A72200592321;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				AA376E1F2DC4A72200592321 /* SampleCleanArchitecture */,
+				AA376E342DC4A78000592321 /* SampleCleanArchitectureTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AA376E1E2DC4A72200592321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA376E332DC4A78000592321 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA376E312DC4A78000592321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA376E3A2DC4A78000592321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA376E1F2DC4A72200592321 /* SampleCleanArchitecture */;
+			targetProxy = AA376E392DC4A78000592321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AA376E2C2DC4A72400592321 /* Debug */ = {
@@ -302,6 +377,42 @@
 			};
 			name = Release;
 		};
+		AA376E3C2DC4A78000592321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T9F5MQVRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oasis.cargo.SampleCleanArchitectureTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleCleanArchitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SampleCleanArchitecture";
+			};
+			name = Debug;
+		};
+		AA376E3D2DC4A78000592321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T9F5MQVRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oasis.cargo.SampleCleanArchitectureTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleCleanArchitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SampleCleanArchitecture";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +430,15 @@
 			buildConfigurations = (
 				AA376E2F2DC4A72400592321 /* Debug */,
 				AA376E302DC4A72400592321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA376E3B2DC4A78000592321 /* Build configuration list for PBXNativeTarget "SampleCleanArchitectureTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA376E3C2DC4A78000592321 /* Debug */,
+				AA376E3D2DC4A78000592321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
