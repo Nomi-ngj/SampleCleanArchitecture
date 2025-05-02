@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - Data/Remote/APIService.swift
 protocol APIService {
     func request<T: Decodable>(endpoint: String) async throws -> T
 }

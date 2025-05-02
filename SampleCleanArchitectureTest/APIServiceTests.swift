@@ -5,8 +5,6 @@
 //  Created by Nouman Gul Junejo on 02/05/2025.
 //
 
-
-// MARK: - Tests/DataTests/APIServiceTests.swift
 import XCTest
 @testable import SampleCleanArchitecture
 

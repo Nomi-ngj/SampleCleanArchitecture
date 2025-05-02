@@ -17,12 +17,6 @@ final class GetUsersUseCaseTests: XCTestCase {
             return usersToReturn
         }
     }
-    
-//    class FailingUserRepository: UserRepository {
-//        func fetchUsers() async throws -> [User] {
-//            throw URLError(.notConnectedToInternet)
-//        }
-//    }
 
     func testExecute_ReturnsUsers() async throws {
         let mockRepo = MockUserRepository()

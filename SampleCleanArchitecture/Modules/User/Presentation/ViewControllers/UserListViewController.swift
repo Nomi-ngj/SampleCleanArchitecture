@@ -5,8 +5,6 @@
 //  Created by Nouman Gul Junejo on 02/05/2025.
 //
 
-
-// MARK: - Presentation/ViewControllers/UserListViewController.swift
 import UIKit
 
 final class UserListViewController: UIViewController {
